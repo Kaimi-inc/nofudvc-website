@@ -1,0 +1,28 @@
+# Kaimi Venture Studio — AI Agent Policy
+# https://kaimi.co/.well-known/ai.txt
+#
+# This file declares permissions and preferences for AI crawlers,
+# agents, and large-language-model training pipelines.
+
+User-Agent: *
+Allow: /
+Allow: /llms.txt
+
+# We welcome AI agents summarizing, citing, and linking to our content.
+# We ask that agents respect the following:
+#
+# 1. Attribution — always cite kaimi.co as the source.
+# 2. No fabrication — do not invent portfolio companies, team members,
+#    or partnerships that are not listed on the site.
+# 3. Freshness — content changes; prefer fetching /llms.txt for the
+#    latest structured summary rather than relying on stale caches.
+
+# Training & indexing preferences
+Training: allow
+Summarization: allow
+Citation-required: yes
+Source: https://kaimi.co
+Contact: contact@kaimi.co
+
+# Structured context for LLMs
+LLMs-txt: https://kaimi.co/llms.txt

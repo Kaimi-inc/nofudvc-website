@@ -36,20 +36,23 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               style={{ transitionDelay: "200ms" }}
             >
               <p className="max-w-md text-xs leading-relaxed text-foreground/90 md:text-lg">
-              No FUD Ventures believes that creating a diversified portfolio of niche businesses that explore niche markets and generate strong cash flow is the key driver of growth and wealth creation. These businesses create unparalleled value for customers.
+              Kaimi Venture Studio builds a portfolio of focused, cash-generating businesses in markets the venture industry overlooks. We believe durable wealth is built by owning a portfolio of small, profitable companies that solve real problems for real customers.
               </p>
-              <p className="max-w-md text-xs leading-relaxed text-foreground/90 md:text-lg">
-              Miami🦩Made
-              </p>
+              <p className="max-w-md text-xs leading-relaxed text-foreground/90 md:text-lg">The venture playbook of the last decade optimized for scale, blitzscaling, and winner-take-all markets. </p>
+
+              <p className="max-w-md text-xs leading-relaxed text-foreground/90 md:text-lg">That left thousands of valuable industries untouched, sectors too small, too unglamorous, or too operationally complex for traditional VCs to touch. These are the markets we build in: recruiting, talent, sports data, and the long tail of verticals where a focused product can generate $5M–$50M in revenue, serve customers exceptionally well, and compound for decades.</p>
+              
+              <p className="max-w-md text-xs leading-relaxed text-foreground/90 md:text-lg"></p>
             </div>
           </div>
 
           {/* Right side - Stats with creative layout */}
           <div className="flex flex-col justify-center space-y-4 md:space-y-12">
             {[
-              { value: "50+", label: "Companies", sublabel: "Created worldwide", direction: "right" },
-              { value: "12", label: "Years", sublabel: "Of innovation across companies", direction: "left" },
-              { value: "7", label: "Awards", sublabel: "Industry recognition", direction: "right" },
+              { value: "50+", label: "Projects", sublabel: "delivered worldwide", direction: "right" },
+              { value: "13", label: "Years", sublabel: "of innovation across companies", direction: "left" },
+              { value: "7", label: "Awards", sublabel: "industry recognition", direction: "right" },
+              { value: "3", label: "Exits", sublabel: "across verticals", direction: "left" },
             ].map((stat, i) => {
               const getRevealClass = () => {
                 if (!isVisible) {

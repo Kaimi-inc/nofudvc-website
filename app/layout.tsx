@@ -7,31 +7,50 @@ import "./globals.css"
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://kaimi.co"
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ""
+
 export const metadata: Metadata = {
-  title: "No FUD Ventures",
-  description: "No FUD Ventures is a Miami based startup studio that leverages emergent technologies to transform markets. We are entrepreneurs, investors, and technologists who are passionate about building the future of business.",
-  generator: "No FUD Ventures",
-  icons: {
-    icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/logo.png`,
-    shortcut: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/logo.png`,
-    apple: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/logo.png`,
+  title: {
+    default: "Kaimi — Venture Studio",
+    template: "%s | Kaimi",
   },
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'),
+  description:
+    "Miami-based venture studio building focused, cash-generating businesses in markets the venture industry overlooks — recruiting, talent, sports data, and beyond.",
+  keywords: [
+    "venture studio",
+    "Miami",
+    "startup studio",
+    "recruiting",
+    "talent",
+    "sports data",
+    "Kaimi",
+    "portfolio companies",
+    "operator-led",
+  ],
+  authors: [{ name: "Kaimi Venture Studio", url: siteUrl }],
+  creator: "Kaimi Venture Studio",
+  icons: {
+    icon: `${basePath}/logo.png`,
+    shortcut: `${basePath}/logo.png`,
+    apple: `${basePath}/logo.png`,
+  },
+  metadataBase: new URL(siteUrl),
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'}${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/`,
+    canonical: `${siteUrl}${basePath}/`,
   },
   openGraph: {
-    title: "No FUD Ventures",
+    title: "Kaimi — Venture Studio",
     description:
-      "No FUD Ventures is a Miami based startup studio leveraging emergent technologies to transform markets.",
-    url: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'}${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/`,
-    siteName: "No FUD Ventures",
+      "Building focused, profitable companies in markets the venture industry overlooks. Based in Miami, operating across LATAM and Europe.",
+    url: `${siteUrl}${basePath}/`,
+    siteName: "Kaimi",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/logo.png`,
+        url: `${basePath}/logo.png`,
         width: 1200,
         height: 630,
-        alt: "No FUD Ventures",
+        alt: "Kaimi Venture Studio",
       },
     ],
     locale: "en_US",
@@ -39,10 +58,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "No FUD Ventures",
+    title: "Kaimi — Venture Studio",
     description:
-      "No FUD Ventures is a Miami based startup studio leveraging emergent technologies to transform markets.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/logo.png`],
+      "Building focused, profitable companies in markets the venture industry overlooks. Based in Miami, operating across LATAM and Europe.",
+    images: [`${basePath}/logo.png`],
   },
   robots: {
     index: true,

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kaimi.co/sitemap.xml
+
+# AI agent policy
+# See https://kaimi.co/.well-known/ai.txt

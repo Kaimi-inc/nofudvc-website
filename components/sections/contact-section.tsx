@@ -2,45 +2,9 @@
 
 import { Mail, MapPin } from "lucide-react"
 import { useReveal } from "@/hooks/use-reveal"
-import { useState, type FormEvent } from "react"
-import { MagneticButton } from "@/components/magnetic-button"
 
 export function ContactSection() {
   const { ref, isVisible } = useReveal(0.3)
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitSuccess, setSubmitSuccess] = useState(false)
-
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-
-    if (!formData.name || !formData.email || !formData.message) return
-
-    const scriptUrl = process.env.NEXT_PUBLIC_GOOGLE_APPS_SCRIPT_URL
-    if (!scriptUrl) {
-      console.error("Google Apps Script URL is not configured")
-      return
-    }
-
-    setIsSubmitting(true)
-    try {
-      const res = await fetch(scriptUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      })
-      if (!res.ok) throw new Error("Request failed")
-
-      setSubmitSuccess(true)
-      setFormData({ name: "", email: "", message: "" })
-      setTimeout(() => setSubmitSuccess(false), 5000)
-    } catch (err) {
-      // You could surface a toast here if desired
-      setSubmitSuccess(false)
-    } finally {
-      setIsSubmitting(false)
-    }
-  }
 
   return (
     <section
@@ -56,16 +20,20 @@ export function ContactSection() {
               }`}
             >
               <h2 className="mb-1.5 font-sans text-3xl font-light leading-[1.05] tracking-tight text-foreground md:mb-3 md:text-7xl lg:text-8xl">
-                Let's
+                Let&apos;s
                 <br />
                 talk
               </h2>
-              <p className="font-mono text-[10px] text-foreground/60 md:text-base">/ and build something great together</p>
+              <p className="font-mono text-[10px] text-foreground/60 md:text-base">
+                / and build something great
+              </p>
             </div>
+          </div>
 
+          <div className="flex flex-col justify-center">
             <div className="space-y-3 md:space-y-8">
               <a
-                href="mailto:hiring@nofudinc.com"
+                href="mailto:j@kaimi.co"
                 className={`group block transition-all duration-700 ${
                   isVisible ? "translate-x-0 opacity-100" : "-translate-x-16 opacity-0"
                 }`}
@@ -76,7 +44,7 @@ export function ContactSection() {
                   <span className="font-mono text-xs text-foreground/60">Email</span>
                 </div>
                 <p className="text-sm text-foreground transition-colors group-hover:text-foreground/70 md:text-2xl">
-                  j [at] nofudinc.com
+                  j [at] kaimi.co
                 </p>
               </a>
 
@@ -90,7 +58,7 @@ export function ContactSection() {
                   <MapPin className="h-3 w-3 text-foreground/60" />
                   <span className="font-mono text-xs text-foreground/60">Location</span>
                 </div>
-                <p className="text-sm text-foreground md:text-2xl">🦩Miami🌴</p>
+                <p className="text-sm text-foreground md:text-2xl"> Miami, FL 🦩🌴</p>
               </div>
 
               <div
@@ -99,94 +67,16 @@ export function ContactSection() {
                 }`}
                 style={{ transitionDelay: "500ms" }}
               >
-                {["LinkedIn"].map((social, i) => (
-                  <a
-                    key={social}
-                    href="https://www.linkedin.com/company/nofudventures/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-b border-transparent font-mono text-xs text-foreground/60 transition-all hover:border-foreground/60 hover:text-foreground/90"
-                  >
-                    {social}
-                  </a>
-                ))}
+                <a
+                  href="https://www.linkedin.com/company/nofudventures/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-b border-transparent font-mono text-xs text-foreground/60 transition-all hover:border-foreground/60 hover:text-foreground/90"
+                >
+                  LinkedIn
+                </a>
               </div>
             </div>
-          </div>
-
-          {/* Right side - Minimal form */}
-          <div className="flex flex-col justify-center">
-            <form onSubmit={handleSubmit} className="space-y-3 md:space-y-6">
-              <div
-                className={`transition-all duration-700 ${
-                  isVisible ? "translate-x-0 opacity-100" : "translate-x-16 opacity-0"
-                }`}
-                style={{ transitionDelay: "200ms" }}
-              >
-                <label className="mb-0.5 block font-mono text-[10px] text-foreground/60 md:mb-2 md:text-xs">Name</label>
-                <input
-                  type="text"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  required
-                  className="w-full border-b border-foreground/30 bg-transparent py-1 text-xs text-foreground placeholder:text-foreground/40 focus:border-foreground/50 focus:outline-none md:py-2 md:text-base"
-                  placeholder="Your name"
-                />
-              </div>
-
-              <div
-                className={`transition-all duration-700 ${
-                  isVisible ? "translate-x-0 opacity-100" : "translate-x-16 opacity-0"
-                }`}
-                style={{ transitionDelay: "350ms" }}
-              >
-                <label className="mb-0.5 block font-mono text-[10px] text-foreground/60 md:mb-2 md:text-xs">Email</label>
-                <input
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  required
-                  className="w-full border-b border-foreground/30 bg-transparent py-1 text-xs text-foreground placeholder:text-foreground/40 focus:border-foreground/50 focus:outline-none md:py-2 md:text-base"
-                  placeholder="your@email.com"
-                />
-              </div>
-
-              <div
-                className={`transition-all duration-700 ${
-                  isVisible ? "translate-x-0 opacity-100" : "translate-x-16 opacity-0"
-                }`}
-                style={{ transitionDelay: "500ms" }}
-              >
-                <label className="mb-0.5 block font-mono text-[10px] text-foreground/60 md:mb-2 md:text-xs">Message</label>
-                <textarea
-                  rows={3}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  required
-                  className="w-full border-b border-foreground/30 bg-transparent py-1 text-xs text-foreground placeholder:text-foreground/40 focus:border-foreground/50 focus:outline-none md:py-2 md:text-base"
-                  placeholder="Tell us about your project..."
-                />
-              </div>
-
-              <div
-                className={`transition-all duration-700 ${
-                  isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
-                }`}
-                style={{ transitionDelay: "650ms" }}
-              >
-                <MagneticButton
-                  variant="primary"
-                  size="lg"
-                  className="w-full disabled:opacity-50"
-                  onClick={isSubmitting ? undefined : undefined}
-                >
-                  {isSubmitting ? "Sending..." : "Send Message"}
-                </MagneticButton>
-                {submitSuccess && (
-                  <p className="mt-3 text-center font-mono text-sm text-foreground/80">Message sent successfully!</p>
-                )}
-              </div>
-            </form>
           </div>
         </div>
       </div>

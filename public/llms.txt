@@ -1,22 +1,27 @@
-# llms.txt — Guidelines for AI agents and crawlers
-# More info: https://llmstxt.org/
+# Kaimi Venture Studio
 
-site: https://nofud.vc
-base_path: /
-contact: contact@nofudinc.com
+> Kaimi builds a portfolio of focused, cash-generating businesses in markets the venture industry overlooks. We believe durable wealth isn't built by chasing the next unicorn — it's built by owning a portfolio of small, profitable companies that solve real problems for real customers.
 
-rules:
-  - allow: /
-  - disallow: /api/
+Based in Miami, operating across LATAM and Europe. Each portfolio company runs independently with its own team. The studio contributes senior product, design, and engineering capability, operator-grade diligence, and ecosystem access.
 
-purpose:
-  - research
-  - indexing
+## Thesis
 
-attribution:
-  required: true
-  format: "Source: No FUD Ventures (nofud.vc)"
+The venture playbook of the last decade optimized for scale and winner-take-all markets, leaving thousands of valuable industries untouched — sectors too small, too unglamorous, or too operationally complex for traditional VCs. Kaimi builds in these markets: recruiting, talent, sports data, and the long tail of verticals where focused products generate durable revenue and compound for decades.
 
-license: "All content © No FUD Ventures. Non-commercial use allowed with attribution."
+## What we do
 
+- [Venture Studio Collaborations](https://kaimi.co/#collaborations): Partnering with founders and capital allocators through JVs and equity arrangements.
+- [Operator Diligence](https://kaimi.co/#diligence): Product and operating expertise applied to investment decisions before capital commits.
+- [Ecosystem Building](https://kaimi.co/#ecosystem): Advising on the expansion of the Miami startup ecosystem and connecting portfolio companies to founders, capital, and talent.
+- [Product & Engineering](https://kaimi.co/#product): Senior product, design, and engineering execution as the studio's contributed asset.
 
+## Portfolio
+
+- [Augtal](https://augtal.com): AI recruiting automation SaaS for small staffing agencies and independent recruiters.
+- [Aperturio](https://aperturio.com): LATAM talent placement as a conversational service — request talent via Slack or Claude Desktop.
+- [Olta.football](https://olta.football): Football intelligence and storytelling platform transforming real-time match data into narratives, insights, and content.
+
+## Contact
+
+- Email: contact@kaimi.co
+- Site: https://kaimi.co

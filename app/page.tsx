@@ -185,8 +185,8 @@ export default function Home() {
       >
         <Shader className="h-full w-full">
           <Swirl
-            colorA="#141415"
-            colorB="#5D63823D"
+            colorA="#141210"
+            colorB="#8B6B4A3D"
             speed={0.8}
             detail={0.8}
             blend={50}
@@ -198,11 +198,11 @@ export default function Home() {
             fineY={40}
           />
           <ChromaFlow
-            baseColor="#FFE91F"
-            upColor="#FFE91F"
-            downColor="#FEFEFF"
-            leftColor="#FEFEFF"
-            rightColor="#FEFEFF"
+            baseColor="#C4956A"
+            upColor="#D4A574"
+            downColor="#F5EDE5"
+            leftColor="#F5EDE5"
+            rightColor="#F0E8DF"
             intensity={0.9}
             radius={1.8}
             momentum={25}
@@ -223,11 +223,11 @@ export default function Home() {
           className="flex items-center gap-2 transition-transform hover:scale-105"
         >
           <Image
-            src="/nofudlogo.png"
-            alt="NOFUD logo"
-            width={60}
-            height={60}
-            className="h-6 w-auto"
+            src="/logo.png"
+            alt="Kaimi Ventures logo"
+            width={200}
+            height={200}
+            className="h-18 w-auto"
             priority
           />
         </button>
@@ -263,19 +263,18 @@ export default function Home() {
         {/* Hero Section */}
         <section className="flex min-h-screen w-screen shrink-0 flex-col justify-end px-4 pb-12 pt-20 md:px-12 md:pb-24 md:pt-24">
           <div className="max-w-3xl">
-            <div className="mb-3 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-foreground/20 bg-foreground/15 px-3 py-1 backdrop-blur-md duration-700 md:mb-4 md:px-4 md:py-1.5">
-              <p className="font-mono text-[10px] text-foreground/90 md:text-xs">Startup Studio</p>
-            </div>
+
             <h1 className="mb-4 animate-in fade-in slide-in-from-bottom-8 font-sans text-4xl font-light leading-[1.1] tracking-tight text-foreground duration-1000 md:mb-6 md:text-7xl lg:text-8xl">
               <span className="text-balance">
-                No FUD
-                <br />
-                Ventures
+                Kaimi
               </span>
             </h1>
-            <p className="mb-6 max-w-xl animate-in fade-in slide-in-from-bottom-4 text-sm leading-relaxed text-foreground/90 duration-1000 delay-200 md:mb-8 md:text-xl">
+            <div className="mb-3 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-foreground/20 bg-foreground/15 px-3 py-1 backdrop-blur-md duration-700 md:mb-4 md:px-4 md:py-1.5">
+              <p className="font-mono text-[10px] text-foreground/90 md:text-xs">Venture Studio</p>
+            </div>
+            <p className="mb-6 max-w-xl animate-in fade-in slide-in-from-bottom-4 text-sm leading-relaxed text-foreground/90 duration-1000 delay-200 md:mb-8 md:text-xl mt-8">
               <span className="text-pretty">
-                No FUD (Fear, Uncertainty, Doubt) Ventures is a Miami based startup studio that leverages emergent technologies to transform markets. We are entrepreneurs, investors, and technologists who are passionate about building the future of business.
+                Miami based, Kaimi Venture Studio leverages emergent technologies to transform markets. We are entrepreneurs, investors, and technologists who are passionate about building the future of business.
               </span>
             </p>
             <div className="flex animate-in fade-in slide-in-from-bottom-4 flex-col gap-4 duration-1000 delay-300 sm:flex-row sm:items-center">

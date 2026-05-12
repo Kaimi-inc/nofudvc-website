@@ -8,7 +8,7 @@ export function ServicesSection() {
   return (
     <section
       ref={ref}
-      className="flex h-screen w-screen shrink-0 snap-start items-center px-3 pt-16 md:px-12 md:pt-0 lg:px-16"
+      className="flex h-screen w-screen shrink-0 snap-start items-center px-3 pl-8 pt-16 md:pl-24 md:px-12 md:pt-0 lg:pl-32 lg:px-16"
     >
       <div className="mx-auto w-full max-w-7xl">
         <div
@@ -17,31 +17,31 @@ export function ServicesSection() {
           }`}
         >
           <h2 className="mb-1.5 font-sans text-3xl font-light tracking-tight text-foreground md:mb-2 md:text-6xl lg:text-7xl">
-            Incubation
+            Ecosystem Building
           </h2>
-          <p className="font-mono text-[10px] text-foreground/60 md:text-base">/ We share our expertise and resources with select startups that meet our criteria for cash + equity or equity only basis.</p>
+          <p className="font-mono text-[10px] text-foreground/60 md:text-base">/ We share our expertise and resources with select groups that meet our criteria.</p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Product Strategy",
-              description: "Optimizing the product for maximum market fit, exploring the future of the product and the market.",
+              title: "Product DNA",
+              description: "Operator-led product thinking from founders who've built, sold, and scaled, applied as the core asset every project gets from day one.",
               direction: "top",
             },
             {
-              title: "Market Timing",
-              description: "Understnading the market, defining the hook, value and timing the product.",
+              title: "Venture Studio Collaborations",
+              description: "Partnering with founders and capital allocators to launch new companies, where our product and operating expertise meets their capital, network, or domain edge.",
               direction: "right",
             },
             {
-              title: "Capital formation",
-              description: "Defining financial needs, preparing a business plan, and strategically choosing funding sources.",
+              title: "Operator Diligence",
+              description: "Bringing product and operating expertise to investment decisions, helping partners evaluate, structure, and de-risk new ventures before capital commits.",
               direction: "left",
             },
             {
-              title: "Operational Excellence",
-              description: "Building a foundation of efficient, scalable processes to support growth.",
+              title: "Ecosystem Building",
+              description: "Actively shaping the Miami startup ecosystem — advising on its expansion and plugging our portfolio into the founders, capital, and talent emerging across the region.",
               direction: "bottom",
             },
           ].map((service, i) => (
