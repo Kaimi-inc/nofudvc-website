@@ -233,7 +233,7 @@ export default function Home() {
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
-          {["Home", "Portfolio", "Incubation", "About", "Contact"].map((item, index) => (
+          {["Home", "Services", "Ecosystem", "About", "Contact"].map((item, index) => (
             <button
               key={item}
               onClick={() => scrollToSection(index)}
@@ -270,12 +270,11 @@ export default function Home() {
               </span>
             </h1>
             <div className="mb-3 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-foreground/20 bg-foreground/15 px-3 py-1 backdrop-blur-md duration-700 md:mb-4 md:px-4 md:py-1.5">
-              <p className="font-mono text-[10px] text-foreground/90 md:text-xs">Venture Studio</p>
+              <p className="font-mono text-[10px] text-foreground/90 md:text-xs">Venture Advisory</p>
             </div>
             <p className="mb-6 max-w-xl animate-in fade-in slide-in-from-bottom-4 text-sm leading-relaxed text-foreground/90 duration-1000 delay-200 md:mb-8 md:text-xl mt-8">
               <span className="text-pretty">
-                Miami based, Kaimi Venture Studio leverages emergent technologies to transform markets. We are entrepreneurs, investors, and technologists who are passionate about building the future of business.
-              </span>
+              Based in New York, Chicago, Washington, D.C., and Miami, Kaimi Advisory helps lower-middle-market private equity firms and independent sponsors underwrite technology, AI, and operating risk. We are operators and technologists who translate direct evidence into decisions the investment committee can act on.</span>
             </p>
             <div className="flex animate-in fade-in slide-in-from-bottom-4 flex-col gap-4 duration-1000 delay-300 sm:flex-row sm:items-center">
             </div>

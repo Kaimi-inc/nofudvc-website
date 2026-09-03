@@ -14,34 +14,32 @@ interface Project {
 const projects: Project[] = [
   {
     number: "01",
-    title: "Aperturio",
+    title: "Lower-Middle-Market Private Equity",
     category:
-      "Aperturio is talent placement reimagined as a conversational service. Instead of briefing a recruiter or filling out an intake form, you just ask Claude or Slack and the service startys sourcing the best candidates in the market for you. Backed by a recruiter on the ground it turns hiring from a process into a request.",
-    year: "2024",
-    href: "https://aperturio.com",
+      "PE firms with recurring software and technology-enabled deal flow who need independent screening and integrated diligence on platform and add-on targets. Two-to-three-week clock, IC-ready output, and evidence that reconciles technology, product, and operating findings against the investment thesis.",
+    year: "Platform & Add-Ons",
   },
   {
     number: "02",
-    title: "Augtal",
+    title: "Independent Sponsors",
     category:
-      "Augtal is an AI recruiting automation SaaS built for small staffing agencies and independent recruiters, replacing the work typically outsourced to BD agencies. Its product suite, Signals, ResumeRank, a LinkedIn extension, and ATS integrations, speeds up candidate sourcing, automates candidate scoring, and outreach end-to-end.",
-    year: "2025",
-    href: "https://augtal.com",
+      "Deal-by-deal sponsors pursuing lower-middle-market software or technology-enabled acquisitions who want a senior buy-side diligence team without an in-house operating partner group. Fixed-fee scopes sized to the transaction, delivered by principals who defend the memo in front of LPs and the IC.",
+    year: "Project Diligence",
   },
   {
     number: "03",
-    title: "OLTA.football",
+    title: "Growth Equity & Family Offices",
     category:
-      "Open League Tactical Analysis · is a football intelligence and storytelling platform that transforms real-time match data into narratives, insights, and content for fans, media, and clubs. Think of it as the layer that turns raw football data into something readable, shareable, and worth following beyond the scoreline.",
-    year: "2026",
-    href: "https://olta.football",
+      "Direct investors underwriting software, AI, or data-heavy targets outside their internal technical expertise. We test whether the AI is production-ready, whether deal-critical metrics reconcile to source systems, and whether the roadmap being priced can actually be delivered by the current organization.",
+    year: "Direct Investment",
+    href: "#",
   },
   {
     number: "04",
-    title: "Stealth Startup",
+    title: "Portfolio Boards & Sponsors",
     category:
-      "A stealth startup in the building management space leveraging AU to facilitate better economics.",
-    year: "2026",
+      "Post-close mandates: a 100-day technology and AI value-creation plan, time-bound CTO or COO/CPO leadership to stabilize execution, or a portfolio-wide review of technology risk, AI maturity, and integration readiness across companies.",
+    year: "Post Close",
   },
 ]
 
@@ -84,10 +82,10 @@ export function WorkSection() {
           }`}
         >
           <h2 className="mb-1.5 font-sans text-3xl font-light tracking-tight text-foreground md:mb-2 md:text-6xl lg:text-7xl">
-            Portfolio
+            Services
           </h2>
           <p className="font-mono text-[10px] text-foreground/60 md:text-base">
-            / Our companies
+            / Our work
           </p>
         </div>
 

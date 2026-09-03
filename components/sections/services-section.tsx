@@ -25,23 +25,23 @@ export function ServicesSection() {
         <div className="grid gap-6 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Product DNA",
-              description: "Operator-led product thinking from founders who've built, sold, and scaled, applied as the core asset every project gets from day one.",
+              title: "Deal-Flow Screening",
+              description: "Independent, bounded triage on software and technology-enabled targets before a buyer commits to full diligence, with 48-hour turnaround on up to three screens per month.",
               direction: "top",
             },
             {
-              title: "Venture Studio Collaborations",
-              description: "Partnering with founders and capital allocators to launch new companies, where our product and operating expertise meets their capital, network, or domain edge.",
+              title: "Integrated Diligence",
+              description: "A CTO and COO/CPO principal test the technology, AI, product, data, and operating model against the investment thesis, then defend the conclusion in front of the deal team.",
               direction: "right",
             },
             {
-              title: "Operator Diligence",
-              description: "Bringing product and operating expertise to investment decisions, helping partners evaluate, structure, and de-risk new ventures before capital commits.",
+              title: "100-Day Value-Creation Plan",
+              description: "A sequenced post-close program that turns accepted diligence findings into owners, milestones, decisions, and business cases linking technology and AI to revenue and margin.",
               direction: "left",
             },
             {
-              title: "Ecosystem Building",
-              description: "Actively shaping the Miami startup ecosystem — advising on its expansion and plugging our portfolio into the founders, capital, and talent emerging across the region.",
+              title: "Portfolio Support",
+              description: "Time-bound CTO or COO/CPO leadership to carry the plan into execution, plus sponsor-level reviews of technology risk, AI maturity, and integration readiness across portfolio companies.",
               direction: "bottom",
             },
           ].map((service, i) => (

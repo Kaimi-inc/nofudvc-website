@@ -25,7 +25,7 @@ export function ContactSection() {
                 talk
               </h2>
               <p className="font-mono text-[10px] text-foreground/60 md:text-base">
-                / and build something great
+                
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ export function ContactSection() {
                   <MapPin className="h-3 w-3 text-foreground/60" />
                   <span className="font-mono text-xs text-foreground/60">Location</span>
                 </div>
-                <p className="text-sm text-foreground md:text-2xl"> Miami, FL 🦩🌴</p>
+                <p className="text-sm text-foreground md:text-2xl">New York, NY · Chicago, IL · Washington, DC · Miami, FL</p>
               </div>
 
               <div

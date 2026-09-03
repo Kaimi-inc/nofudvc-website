@@ -36,11 +36,11 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               style={{ transitionDelay: "200ms" }}
             >
               <p className="max-w-md text-xs leading-relaxed text-foreground/90 md:text-lg">
-              Kaimi Venture Studio builds a portfolio of focused, cash-generating businesses in markets the venture industry overlooks. We believe durable wealth is built by owning a portfolio of small, profitable companies that solve real problems for real customers.
+              Kaimi Advisory helps lower-middle-market private equity firms and independent sponsors test an investment thesis against the target's code, systems, operating data, product, and ability to execute, then translate the evidence into decisions the investment committee can act on.
               </p>
-              <p className="max-w-md text-xs leading-relaxed text-foreground/90 md:text-lg">The venture playbook of the last decade optimized for scale, blitzscaling, and winner-take-all markets. </p>
+              <p className="max-w-md text-xs leading-relaxed text-foreground/90 md:text-lg">We work buy-side only, on software and technology-enabled businesses roughly $10M to $250M in enterprise value, on a two-to-three-week diligence clock.</p>
 
-              <p className="max-w-md text-xs leading-relaxed text-foreground/90 md:text-lg">That left thousands of valuable industries untouched, sectors too small, too unglamorous, or too operationally complex for traditional VCs to touch. These are the markets we build in: recruiting, talent, sports data, and the long tail of verticals where a focused product can generate $5M–$50M in revenue, serve customers exceptionally well, and compound for decades.</p>
+              <p className="max-w-md text-xs leading-relaxed text-foreground/90 md:text-lg">Financial and commercial diligence establishes what a company has sold and how it presents its market. It does not establish whether the platform can support the growth case, whether the AI is real and economical, whether deal-critical metrics are controlled, or whether the organization can deliver the roadmap being underwritten. Those questions become expensive after close. We answer them before the IC commits.</p>
               
               <p className="max-w-md text-xs leading-relaxed text-foreground/90 md:text-lg"></p>
             </div>

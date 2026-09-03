@@ -12,24 +12,26 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ""
 
 export const metadata: Metadata = {
   title: {
-    default: "Kaimi — Venture Studio",
-    template: "%s | Kaimi",
+    default: "Kaimi Advisory — Technology, AI & Operational Diligence",
+    template: "%s | Kaimi Advisory",
   },
   description:
-    "Miami-based venture studio building focused, cash-generating businesses in markets the venture industry overlooks — recruiting, talent, sports data, and beyond.",
+    "Buy-side technology, AI, and operational due diligence for lower-middle-market private equity firms and independent sponsors. Principals in New York, Chicago, and Miami.",
   keywords: [
-    "venture studio",
-    "Miami",
-    "startup studio",
-    "recruiting",
-    "talent",
-    "sports data",
+    "private equity advisory",
+    "technology due diligence",
+    "AI due diligence",
+    "operational due diligence",
+    "lower middle market",
+    "buy-side diligence",
+    "independent sponsors",
+    "CTO advisory",
+    "value creation",
     "Kaimi",
-    "portfolio companies",
-    "operator-led",
+    "Kaimi Advisory",
   ],
-  authors: [{ name: "Kaimi Venture Studio", url: siteUrl }],
-  creator: "Kaimi Venture Studio",
+  authors: [{ name: "Kaimi Advisory", url: siteUrl }],
+  creator: "Kaimi Advisory",
   icons: {
     icon: `${basePath}/logo.png`,
     shortcut: `${basePath}/logo.png`,
@@ -40,17 +42,17 @@ export const metadata: Metadata = {
     canonical: `${siteUrl}${basePath}/`,
   },
   openGraph: {
-    title: "Kaimi — Venture Studio",
+    title: "Kaimi Advisory — Buy-Side Technology, AI & Operational Diligence",
     description:
-      "Building focused, profitable companies in markets the venture industry overlooks. Based in Miami, operating across LATAM and Europe.",
+      "Independent buy-side diligence for lower-middle-market private equity firms and independent sponsors. Two-to-three-week engagements led by CTO and COO/CPO principals in New York, Chicago, and Miami.",
     url: `${siteUrl}${basePath}/`,
-    siteName: "Kaimi",
+    siteName: "Kaimi Advisory",
     images: [
       {
         url: `${basePath}/logo.png`,
         width: 1200,
         height: 630,
-        alt: "Kaimi Venture Studio",
+        alt: "Kaimi Advisory",
       },
     ],
     locale: "en_US",
@@ -58,9 +60,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kaimi — Venture Studio",
+    title: "Kaimi Advisory — Buy-Side Technology, AI & Operational Diligence",
     description:
-      "Building focused, profitable companies in markets the venture industry overlooks. Based in Miami, operating across LATAM and Europe.",
+      "Independent buy-side diligence for lower-middle-market private equity firms and independent sponsors. Two-to-three-week engagements led by CTO and COO/CPO principals in New York, Chicago, and Miami.",
     images: [`${basePath}/logo.png`],
   },
   robots: {
