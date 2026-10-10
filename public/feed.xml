@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Kaimi Advisory Notes</title>
+    <link>https://kaimi.co/notes</link>
+    <description>Essays from Kaimi Advisory on agentic software development, AI, and technology decisions.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Oct 2026 01:16:41 GMT</lastBuildDate>
+    <item>
+      <title>Optimizing Agentic Software Development with System 1 Models</title>
+      <link>https://kaimi.co/notes/optimizing-agentic-software-development-with-system-1-models</link>
+      <guid isPermaLink="true">https://kaimi.co/notes/optimizing-agentic-software-development-with-system-1-models</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <dc:creator>JM Grebski</dc:creator>
+      <description><![CDATA[JM Grebski on why System 1 models should make product decisions and System 2 models should build them, and what that changes for engineering teams and private equity.]]></description>
+    </item>
+  </channel>
+</rss>

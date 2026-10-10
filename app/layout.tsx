@@ -2,13 +2,12 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { jsonLdScript, organizationJsonLd, websiteJsonLd } from "@/lib/seo"
+import { basePath, siteUrl } from "@/lib/site"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://kaimi.co"
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ""
 
 export const metadata: Metadata = {
   title: {
@@ -40,6 +39,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: `${siteUrl}${basePath}/`,
+    types: { "application/rss+xml": "/feed.xml" },
   },
   openGraph: {
     title: "Kaimi Advisory — Buy-Side Technology, AI & Operational Diligence",
@@ -68,6 +68,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
 }
 
@@ -79,6 +80,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdScript(organizationJsonLd()) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdScript(websiteJsonLd()) }} />
         {children}
         <Analytics />
       </body>

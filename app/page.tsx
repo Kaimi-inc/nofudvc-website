@@ -2,6 +2,7 @@
 
 import { Shader, ChromaFlow, Swirl } from "shaders/react"
 import Image from "next/image"
+import Link from "next/link"
 import { CustomCursor } from "@/components/custom-cursor"
 import { GrainOverlay } from "@/components/grain-overlay"
 import { WorkSection } from "@/components/sections/work-section"
@@ -232,23 +233,32 @@ export default function Home() {
           />
         </button>
 
-        <div className="hidden items-center gap-8 md:flex">
-          {["Home", "Services", "Ecosystem", "About", "Contact"].map((item, index) => (
-            <button
-              key={item}
-              onClick={() => scrollToSection(index)}
-              className={`group relative font-sans text-sm font-medium transition-colors ${
-                currentSection === index ? "text-foreground" : "text-foreground/80 hover:text-foreground"
-              }`}
-            >
-              {item}
-              <span
-                className={`absolute -bottom-1 left-0 h-px bg-foreground transition-all duration-300 ${
-                  currentSection === index ? "w-full" : "w-0 group-hover:w-full"
+        <div className="flex items-center gap-8">
+          <div className="hidden items-center gap-8 md:flex">
+            {["Home", "Services", "Ecosystem", "About", "Contact"].map((item, index) => (
+              <button
+                key={item}
+                onClick={() => scrollToSection(index)}
+                className={`group relative font-sans text-sm font-medium transition-colors ${
+                  currentSection === index ? "text-foreground" : "text-foreground/80 hover:text-foreground"
                 }`}
-              />
-            </button>
-          ))}
+              >
+                {item}
+                <span
+                  className={`absolute -bottom-1 left-0 h-px bg-foreground transition-all duration-300 ${
+                    currentSection === index ? "w-full" : "w-0 group-hover:w-full"
+                  }`}
+                />
+              </button>
+            ))}
+          </div>
+          <Link
+            href="/notes"
+            className="group relative font-sans text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
+          >
+            Notes
+            <span className="absolute -bottom-1 left-0 h-px w-0 bg-foreground transition-all duration-300 group-hover:w-full" />
+          </Link>
         </div>
       </nav>
 

@@ -1,0 +1,92 @@
+<!--
+title: Optimizing Agentic Software Development with System 1 Models
+date: 2026-10-09
+author: JM Grebski
+excerpt: Product decisions belong to System 1. Building belongs to System 2.
+description: JM Grebski on why System 1 models should make product decisions and System 2 models should build them, and what that changes for engineering teams and private equity.
+keywords: agentic software development, System 1 models, System 2 models, Daniel Kahneman, product decisions, private equity technology integration, open-weight models
+-->
+
+<p>I’ve been thinking a lot about the way day-to-day work environments are shifting, specifically with the application of Artificial Intelligence in the workplace.</p>
+
+<p>In a monthly get-together with a friend I used to work with, a software engineer at a major publicly traded company, our conversation steered toward the state of product development and, more specifically, the software side. He lamented that his job has basically become LLM babysitting.</p>
+
+<h2>The current software development process</h2>
+
+<p>Take the current software development process for example.</p>
+
+<ol>
+  <li>Check out tasks.</li>
+  <li>Assign the task to an agent harness in the terminal.</li>
+  <li>Babysit. Read the plan, edit or approve the plan, then click yes in one of 9, 12, or 15 terminal windows, each running a separate task and each orchestrating multi-step, autonomous agent cycles.</li>
+  <li>Commit the code, and wait for the PR backlog to clear. The PRs are also written by LLMs.</li>
+</ol>
+
+<p>The only human component other than a tactile approval is, first, the software engineer needs to answer when asked what the LLM built and why, and second, PRs are orchestrated by people, hence the backlog. Removing the person would allow the system as a whole to be automated. The issue then comes to decision making, specifically around what to build, when, and why. The conversation with my friend brought us to leveraging System 1 models as the driver of product decisions, and System 2 models as the builders.</p>
+
+<h2>What are System 1 and System 2?</h2>
+
+<p>The term was coined by Daniel Kahneman, in his 2011 book <em>Thinking, Fast and Slow</em>. You can think of System 1 as fast, reflexive judgement (Laya or Jev). System 2 is slow, deliberate reasoning (Claude, Qwen, or ChatGPT).</p>
+
+<p>A System 1 model will work like this. You give it a state, this can be plain text (or JSON, YAML, et al.), plus a question and a set of options you define. The System 1 model will weigh the options and return a probabilistic output. That’s it.</p>
+
+<p>A System 2 model is likely something you’re already familiar with. It reads the user’s request, reasons through it, and generates an answer.</p>
+
+<h3>From New York to Washington</h3>
+
+<p>Let’s run through an example. I want to get from NYC to DC as fast as possible, leaving at 9am. I send a System 1 model the following:</p>
+
+<blockquote>
+  <p><strong>Question:</strong> What is the fastest way from NYC to DC, leaving at 9am?</p>
+  <p><strong>Options:</strong> Acela Express, I-95, US-1</p>
+</blockquote>
+
+<p>The result will look something like this.</p>
+
+<ul>
+  <li>Acela Express: .50</li>
+  <li>I-95: .44</li>
+  <li>US-1: .06</li>
+</ul>
+
+<p>This adds up to 1, and I get a 50% probability that the Acela is the fastest of the three. Now if I want to know which is the most scenic, the scores will reshuffle, but only across the three options I gave it. If I want to weigh a drive through PA as the most scenic, then I have to give it that option. Make sense? Good.</p>
+
+<p>The benefit of System 1 models is speed and cost. Jev and Laya return decisions like these in a fraction of a second and cost fractions of a cent to execute, whereas an LLM like Claude would work out which borough I’m leaving from, whether I need to take the subway, if I have a car, what the weather is like. It would check traffic. This takes much more compute, which translates to more tokens, which translates in turn to more dollars spent per answer.</p>
+
+<p>The trick to leveraging System 1 models is breaking the request down into a question and a series of options, and both people and LLMs can execute this function.</p>
+
+<h2>What this means for companies</h2>
+
+<p>In the context of a workflow, and especially around product development, product management, and product engineering, System 1 models should be leveraged to make product-building decisions.</p>
+
+<p>In the before times (pre-AI), product managers gathered product feedback, scored features in a priority matrix, assigned value to each one, then planned the work based on those values. I believe that today this is largely no longer necessary.</p>
+
+<p>Given well constructed product requirements, a System 1 model can score feature development based on any number of given success criteria, and pass those features to a System 2 agent which then builds them, checks them, and commits them, where another System 2 agent then merges, deploys, and so on, based on an organization’s specific agentic loop.</p>
+
+<p>The product manager can be leveraged to research and write those requirements, or the work can be handed off to an LLM with the human in the loop checking the output, similarly to my friend checking code planning in his agentic-loop environments.</p>
+
+<h2>How to apply system 1 > system 2 loops strategically</h2>
+
+<p>Application depends on context.</p>
+
+<h3>For internal teams</h3>
+
+<p>For companies optimizing agentic development, the benefits are clear time and cost savings. Offloading decision making from System 2 to System 1 should shave considerable token usage from System 2 API calls. Retooling product managers to run this operation is a must as well. Chances are you can do more with less, or multiples more with the same headcount.</p>
+
+<h3>For PE, M&amp;A, and rollups</h3>
+
+<p>Portfolio companies often struggle with technology integration, systems integration, and scalability. Leveraging System 1, then System 2, designs in a transformation will not only increase integration speeds, but do so at lower costs, and create a post-merger system that is modern, malleable, and scalable.</p>
+
+<h2>The hard part</h2>
+
+<p>Conceptually, a System 1 model feeding a series of System 2 agents seems rudimentary. The implementation, however, is going to be anything but. Great care has to be given to the way these models and agents are set up to interact with one another, which gates and boundaries apply, and which continuation triggers require a human in the loop and which do not.</p>
+
+<p>Where the person is needed is in validating outputs and tweaking the system, adjusting parameters and boundaries, and in its initial planning and conception. Running a setup like this requires a different skillset from the traditional product research, design, management, and development that most people in the space are trained on.</p>
+
+<h2>Protecting the moat</h2>
+
+<p>Implementing a system like this using frontier labs may come with knowledge and data security risks. If System 2 models from frontier labs are leveraged, there is the possibility that these labs will use company data for training purposes unless explicitly stated otherwise, including in the processing of datastreams, retaining thought (which can be used for distillation), and other issues that companies who rely on knowledge, data, or both should safeguard against.</p>
+
+<p>The alternative is local (also cloud-based) inference using open-weight models whose weights firms can adjust to their specific use cases, keeping knowledge and data in house. In an open-weight scenario, companies can swap models while retaining all workflows, similar to how a standard harness works interoperably with various closed and open-source models.</p>
+
+<p>Where I think it gets really interesting is when we begin to apply these types of mental models to building recursive applications.</p>

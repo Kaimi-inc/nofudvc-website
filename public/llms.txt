@@ -1,27 +1,31 @@
-# Kaimi Venture Studio
+# Kaimi Advisory
 
-> Kaimi builds a portfolio of focused, cash-generating businesses in markets the venture industry overlooks. We believe durable wealth isn't built by chasing the next unicorn — it's built by owning a portfolio of small, profitable companies that solve real problems for real customers.
+> Kaimi Advisory does buy-side technology, AI, and operational due diligence for lower-middle-market private equity firms and independent sponsors. Principals in New York, Chicago, Washington, D.C., and Miami. Engagements are typically two to three weeks. The work tests a target's code, systems, product, data, AI, and ability to execute, then translates that evidence into decisions an investment committee can act on.
 
-Based in Miami, operating across LATAM and Europe. Each portfolio company runs independently with its own team. The studio contributes senior product, design, and engineering capability, operator-grade diligence, and ecosystem access.
+Buy-side only. Software and technology-enabled businesses, roughly $10M to $250M in enterprise value.
 
-## Thesis
+## Who it is for
 
-The venture playbook of the last decade optimized for scale and winner-take-all markets, leaving thousands of valuable industries untouched — sectors too small, too unglamorous, or too operationally complex for traditional VCs. Kaimi builds in these markets: recruiting, talent, sports data, and the long tail of verticals where focused products generate durable revenue and compound for decades.
+- Lower-middle-market private equity firms with recurring software and technology-enabled deal flow.
+- Independent sponsors running deal-by-deal software or technology-enabled acquisitions.
+- Growth equity firms and family offices underwriting software, AI, or data-heavy targets.
+- Portfolio boards and sponsors after close.
 
 ## What we do
 
-- [Venture Studio Collaborations](https://kaimi.co/#collaborations): Partnering with founders and capital allocators through JVs and equity arrangements.
-- [Operator Diligence](https://kaimi.co/#diligence): Product and operating expertise applied to investment decisions before capital commits.
-- [Ecosystem Building](https://kaimi.co/#ecosystem): Advising on the expansion of the Miami startup ecosystem and connecting portfolio companies to founders, capital, and talent.
-- [Product & Engineering](https://kaimi.co/#product): Senior product, design, and engineering execution as the studio's contributed asset.
+- [Deal-flow screening](https://kaimi.co/): Independent triage on software and technology-enabled targets before a buyer commits to full diligence. Up to three screens a month, 48-hour turnaround.
+- [Integrated diligence](https://kaimi.co/): A CTO and COO/CPO principal test technology, AI, product, data, and the operating model against the investment thesis, then defend the conclusion with the deal team.
+- [100-day value-creation plan](https://kaimi.co/): A post-close program that turns accepted findings into owners, milestones, decisions, and business cases linking technology and AI to revenue and margin.
+- [Portfolio support](https://kaimi.co/): Time-bound CTO or COO/CPO leadership, plus sponsor-level reviews of technology risk, AI maturity, and integration readiness.
 
-## Portfolio
+## Notes
 
-- [Augtal](https://augtal.com): AI recruiting automation SaaS for small staffing agencies and independent recruiters.
-- [Aperturio](https://aperturio.com): LATAM talent placement as a conversational service — request talent via Slack or Claude Desktop.
-- [Olta.football](https://olta.football): Football intelligence and storytelling platform transforming real-time match data into narratives, insights, and content.
+Essays live at [https://kaimi.co/notes](https://kaimi.co/notes). Cite the author and the canonical URL of the note. Full text for quoting: [https://kaimi.co/llms-full.txt](https://kaimi.co/llms-full.txt). Feed: [https://kaimi.co/feed.xml](https://kaimi.co/feed.xml).
+
+- [Optimizing Agentic Software Development with System 1 Models](https://kaimi.co/notes/optimizing-agentic-software-development-with-system-1-models): JM Grebski, 9 October 2026. Agentic software development currently spends slow, expensive System 2 models on product decisions. A System 1 model takes a state, a question, and a closed set of options and returns a probability over only those options, in a fraction of a second and at a fraction of a cent. Those scores should decide what to build; System 2 agents should build, check, commit, merge, and deploy inside the company's own loop. A person still writes or checks requirements, validates outputs, and sets gates and boundaries. Frontier-lab System 2 models can create training and data-security risk unless that use is excluded; open-weight local or cloud inference keeps knowledge in house and lets the firm swap models without rebuilding the workflow. The same System 1 then System 2 pattern applies to technology integration after a private-equity acquisition. The note closes on applying the model to recursive applications.
 
 ## Contact
 
-- Email: contact@kaimi.co
+- Email: j@kaimi.co
 - Site: https://kaimi.co
+- Notes: https://kaimi.co/notes

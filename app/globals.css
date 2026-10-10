@@ -144,3 +144,97 @@
     backface-visibility: hidden;
   }
 }
+
+.notes-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklch, var(--foreground) 28%, transparent) transparent;
+}
+
+.note-body {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: color-mix(in oklch, var(--foreground) 90%, transparent);
+}
+
+.note-body > * + * {
+  margin-top: 1.15rem;
+}
+
+.note-body h2,
+.note-body h3 {
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--foreground);
+  scroll-margin-top: 1.5rem;
+}
+
+.note-body h2 {
+  margin-top: 2.75rem;
+  font-size: 1.75rem;
+}
+
+.note-body h3 {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+
+.note-body a {
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+  text-decoration-color: color-mix(in oklch, var(--foreground) 40%, transparent);
+}
+
+.note-body a:hover {
+  text-decoration-color: var(--foreground);
+}
+
+.note-body strong {
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.note-body blockquote {
+  border-left: 1px solid color-mix(in oklch, var(--foreground) 30%, transparent);
+  padding-left: 1.25rem;
+  color: color-mix(in oklch, var(--foreground) 72%, transparent);
+}
+
+.note-body blockquote p + p {
+  margin-top: 0.75rem;
+}
+
+.note-body ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+.note-body ol {
+  list-style: decimal;
+  padding-left: 1.25rem;
+}
+
+.note-body li + li {
+  margin-top: 0.35rem;
+}
+
+.note-body code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+.note-body hr {
+  margin: 2.5rem 0;
+  border: 0;
+  border-top: 1px solid color-mix(in oklch, var(--foreground) 18%, transparent);
+}
+
+@media (min-width: 768px) {
+  .note-body {
+    font-size: 1.125rem;
+  }
+
+  .note-body h2 {
+    font-size: 2rem;
+  }
+}

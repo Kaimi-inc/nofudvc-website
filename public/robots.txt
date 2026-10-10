@@ -1,7 +1,33 @@
 User-agent: *
 Allow: /
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Host: https://kaimi.co
 Sitemap: https://kaimi.co/sitemap.xml
 
 # AI agent policy
 # See https://kaimi.co/.well-known/ai.txt
+# Structured summary: https://kaimi.co/llms.txt
